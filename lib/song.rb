@@ -1,4 +1,5 @@
-class Song 
+class Song
+  attr_accessor
   @@all = []
   def self.create
     song = self.new 
