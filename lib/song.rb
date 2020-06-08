@@ -23,9 +23,9 @@ class Song
     son
   end
   def self.find_by_name(name)
-    sound = self.find
-    sound.name = name
-    sound
+    @@all.each do |song| = self.find
+    @@all
+    
   end
 end
 
