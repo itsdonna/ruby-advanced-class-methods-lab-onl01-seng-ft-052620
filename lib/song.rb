@@ -23,9 +23,9 @@ class Song
     son
   end
   def self.find_by_name(name)
-    song2 = self.find
-    song2.name = name
-    song2
+    sound = self.find
+    sound.name = name
+    sound
   end
 end
 
