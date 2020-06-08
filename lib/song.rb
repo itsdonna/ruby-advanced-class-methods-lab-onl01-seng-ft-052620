@@ -52,6 +52,9 @@ class Song
         song
         # binding.pry 
     end
+    def self.crate_from_filename(name)
+      
+    end
   end
 
 
