@@ -21,7 +21,9 @@ class Song
     son = self.create 
     son.name = name
     son
-  
+  end
+  def self.find_by_name(name)
+    
   end
 end
 
