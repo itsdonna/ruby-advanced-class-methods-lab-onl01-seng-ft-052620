@@ -1,83 +1,10 @@
-class Song
-  attr_accessor :name, :artist_name
-  @@all = []
- 
-  def self.all
-    @@all
-  end
- 
-  def save
-    self.class.all << self
-  end
-  
-<<<<<<< HEAD
-    def self.create
-    song = Song.new 
-    song.save 
-    song
-  end
-  
-  def self.new_by_name(song_name)
-    song = self.new 
-    song.name = song_name
-    song
-  end
-  
-   def self.create_by_name(song_name)
-    song = self.create     
-    song.name = song_name
-    song
-  end
-  
-    def self.find_by_name(song_name)
-    self.all.detect { |song|
-      song.name == song_name
-    }
-  end
-     def self.find_or_create_by_name(song_name)
-    self.find_by_name(song_name) || self.create_by_name(song_name)
-  end
-  
-   def self.alphabetical
-    self.all.sort_by { |song|
-      song.name
-    }
-  end
-  
-   def self.new_from_filename(filename)
-    new_file = filename.split(" - ") #'initializes a song and artist_name based on the filename format'
-    artist_name = new_file[0]
-    song_name = new_file[1].gsub(".mp3","")
-    song = self.new
-    song.name = song_name
-    song.artist_name = artist_name
-    song
-  end
-  
-    def self.create_from_filename(filename)
-    new_file = filename.split(" - ") #'initializes and saves a song and artist_name based on the filename format'
-    artist_name = new_file[0]
-    song_name = new_file[1].gsub(".mp3","")
-    song = self.create
-    song.name = song_name
-    song.artist_name = artist_name
-    song
-  end
-
-  def self.destroy_all
-    self.all.clear
-  end
-end
- 
-
-=======
+class Song 
   def self.create
-    song = Song.create
-    Song.all.include?(song)
+    song = self.new 
+  
   end
- 
 end
->>>>>>> 5d5de3bc64ae304fca09cf787e0c5b8097547d03
+
 
 
 
