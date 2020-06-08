@@ -10,6 +10,7 @@ class Song
     self.class.all << self
   end
   
+<<<<<<< HEAD
     def self.create
     song = Song.new 
     song.save 
@@ -69,6 +70,14 @@ class Song
 end
  
 
+=======
+  def self.create
+    song = Song.create
+    Song.all.include?(song)
+  end
+ 
+end
+>>>>>>> 5d5de3bc64ae304fca09cf787e0c5b8097547d03
 
 
 
