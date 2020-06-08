@@ -56,7 +56,7 @@ class Song
       self.new_from_filename(name)
     end
     def self.destroy_all()
-      self.clear
+      @@all.clear
     end
   end
 
