@@ -26,6 +26,7 @@ class Song
     @@all.each do |song| 
     if song.name == name  
       song
+      binding.pry
       end
     end
     
